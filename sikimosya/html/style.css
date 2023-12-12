@@ -1,0 +1,76 @@
+.inner {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: content-box;
+  }
+
+  .header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 100px;
+  }
+
+  .header-inner {
+  display: flex;
+  align-items: center;
+  }
+
+  .header-title a{
+  color: #42a995;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+  .header-nav {
+  margin-left: auto;
+  }
+
+  .header-nav-list {
+  display: flex;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .sub {
+    display: block;
+    font-size: 15px;
+    color: #42a995;
+    line-height: 0%
+  }
+
+  .header-nav-item:not(:first-child){
+  margin-left: 40px;
+  }
+
+  .header-nav-item-link {
+  display: block;
+  color: #333;
+  height: 10px;
+  line-height: 50px;
+  }
+  
+  i:before{
+  color: #42a995;  /*アイコンの色*/
+  font-family:"Font Awesome 5 Free";
+  content:"f095";  /*アイコンのコード*/
+  font-weight:900;  /*アイコンの種類*/
+  margin-right:10px;  /*アイコン右の余白*/
+}
+
+ i{
+  color: #42a995;  /*アイコンの色*/
+  font-family:"Font Awesome 5 Free";
+  content:"f0e0";  /*アイコンのコード*/
+  font-weight:900;  /*アイコンの種類*/
+  
+}
+ 
