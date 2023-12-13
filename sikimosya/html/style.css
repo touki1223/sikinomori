@@ -78,14 +78,43 @@
   display: flex;
 }
 
-.main_visuaal_side {
+.main_visual_side {
   width: 20%;
+  background-color: #F2F2F2;
+
+}
+
+.main_visual_side_text2 {
+  background-color: #E0DBC9;
 }
 
 .main_visual {
   width: 80%;
 }
 
-.main_visual_img {
+.main_visual img {
   width: 100%;
+}
+
+.top_catchcopy span {
+  background-color: green;
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+}
+
+.top_catchcopy {
+  position: relative;
+}
+
+.topcatch1 {
+  top: 0;
+}
+
+.topcatch2 {
+  top: 60px;
+}
+
+.topcatch3 {
+  top: 120px;
 }
