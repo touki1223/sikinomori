@@ -7,7 +7,7 @@
 
   .header {
   background: #fff;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 100px;
@@ -71,6 +71,21 @@
   font-family:"Font Awesome 5 Free";
   content:"f0e0";  /*アイコンのコード*/
   font-weight:900;  /*アイコンの種類*/
-  
 }
  
+/* main_visual */
+.main_visual_block {
+  display: flex;
+}
+
+.main_visuaal_side {
+  width: 20%;
+}
+
+.main_visual {
+  width: 80%;
+}
+
+.main_visual_img {
+  width: 100%;
+}
