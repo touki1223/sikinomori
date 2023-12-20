@@ -79,7 +79,7 @@
 }
 
 .main_visual_side {
-  width: 15%;
+  width: 30%;
   font-size: 1rem;
   background-color: #F2F2F2;
 }
@@ -89,7 +89,7 @@
 }
 
 .main_visual {
-  width: 90%;
+  width: 70%;
   height: 300px;
   margin: 0 auto;
 }
@@ -128,6 +128,7 @@
 .main_visual_block2 {
   position: relative;
   padding-top: 520px;
+  display: flex;
 }
 
 .sidenav {
@@ -139,10 +140,11 @@
   font-size: 1rem;
   letter-spacing: 0.2em;
   padding: 0 ;
+  width: 30%;
 }
 
 .side_list {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   font-size: 0.8rem;
   line-height: 4;
@@ -156,7 +158,7 @@
 
 .side_contact {
   box-sizing: border-box;
-  position: absolute;
+  /* position: absolute; */
   top: 1650px;
   background: #F2F2F2;
   color: #333;
@@ -170,10 +172,13 @@
 }
 
 .side_contact2 {
-  position: absolute;
+  /* position: absolute; */
   top: 1800px;
   line-height: 1.75em;
   left: 20px;
   background-color: #F2F2F2;
 }
 
+.page {
+  width: 70%;
+}
