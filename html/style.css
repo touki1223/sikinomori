@@ -1,0 +1,302 @@
+.inner {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: content-box;
+  }
+
+  .header {
+  background: #fff;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 100px;
+  }
+
+  .header-inner {
+  display: flex;
+  align-items: center;
+  }
+
+  .header-title a{
+  color: #42a995;
+  font-size: 20px;
+  font-weight: bold;
+  }
+
+  .header-nav {
+  margin-left: auto;
+  }
+
+  .header-nav-list {
+  display: flex;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .sub {
+    display: block;
+    font-size: 15px;
+    color: #42a995;
+    line-height: 0%
+  }
+
+  .header-nav-item:not(:first-child){
+  margin-left: 40px;
+  }
+
+  .header-nav-item-link {
+  display: block;
+  color: #333;
+  height: 10px;
+  line-height: 50px;
+  }
+  
+  i:before{
+  color: #42a995;  /*アイコンの色*/
+  font-family:"Font Awesome 5 Free";
+  content:"f095";  /*アイコンのコード*/
+  font-weight:900;  /*アイコンの種類*/
+  margin-right:10px;  /*アイコン右の余白*/
+}
+
+ i{
+  color: #42a995;  /*アイコンの色*/
+  font-family:"Font Awesome 5 Free";
+  content:"f0e0";  /*アイコンのコード*/
+  font-weight:900;  /*アイコンの種類*/
+}
+ 
+/* main_visual */
+.main_visual_block {
+  display: flex;
+}
+
+.main_visual_side {
+  width: 15%;
+  font-size: 1rem;
+  background-color: #F2F2F2;
+}
+
+.main_visual_side_text2 {
+  background-color: #E0DBC9;
+}
+
+.main_visual {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.main_visual img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.top_catchcopy span {
+  background-color: rgba(66,169,149,0.9);
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  width: max-content;
+  padding: 0 20px;
+}
+
+.top_catchcopy {
+  position: absolute;
+  top: 330px;
+  padding: 0 20px;
+}
+
+.topcatch1 {
+  top: 30px;
+}
+
+.topcatch2 {
+  top: 120px;
+}
+
+.topcatch3 {
+  top: 210px;
+}
+
+.main_visual_block2 {
+  position: relative;
+  display: flex;
+}
+
+.sidenav {
+  position: relative;
+  width: 270px;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  padding: 0 ;
+  width: 15%;
+  background-color: #F2F2F2;
+}
+
+.sidenav h2 {
+  background-color: #BF9767;
+  color: #fff;
+}
+
+.side_list {
+  /* position: absolute; */
+  left: 0;
+  font-size: 0.8rem;
+  line-height: 4;
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.side_list li {
+  border-bottom: solid 1px #C8C8C8;
+}
+
+.side_contact {
+  box-sizing: border-box;
+  /* position: absolute; */
+  top: 1650px;
+  color: #333;
+  padding-left: 0;
+}
+
+.side_contact li {
+  display: block;
+  padding: 10px 0 14px 10px;
+  margin: 10px 10px 0 0;
+  background-color: #42a995;
+  color: #fff;
+}
+
+.side_contact2 {
+  /* position: absolute; */
+  top: 1800px;
+  line-height: 1.75em;
+  left: 20px;
+}
+
+.fa-phone:before {
+    background-color: #FFF;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.fa-envelope:before {
+  color: #FFf;
+  font-size: 22px;
+}
+
+.page {
+  width: 85%;
+}
+
+.section-title {
+  display: flex;
+}
+
+.title {
+  position: absolute;
+  color: rgba(66,169,149,0.2);
+  font-size: 70px;
+  font-weight: bold;
+  padding-left: 150px;
+}
+
+.heading {
+  font-size: 30px;
+  padding-left: 150px;
+  padding-top: 95px;
+  line-height: 3.7rem;
+}
+
+.frame {
+  display: inline-block;
+  background: rgb(194,183,139,0.4);
+  width: 200%;
+}
+
+.btn  {
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 350px;
+  background: #42A995;
+  max-width: 300px;
+  border-radius: 23px;
+  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: #FFF;
+  padding: 10px 100px;
+}
+
+.top_about_img img {
+  max-width: 100%;
+  width: 50%;
+  padding-left: 400px;
+  padding-top: 80px;
+}
+
+.menu {
+  display: flex;
+  background: rgb(194,183,139,0.2);
+  margin-top: 80px;
+  padding-bottom: 170px;
+}
+
+.title-menu {
+  color: rgba(66,169,149,0.2);
+  font-size: 70px;
+  font-weight: bold;
+  padding-left: 400px;
+}
+
+.menu-heading {
+  font-size: 30px;
+  margin: 130px 0px 0px -160px;
+  color: #42A995;
+}
+
+.menu-text {
+  margin: 180px 0px 0px -250px;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+}
+
+.btn-menu {
+  position: absolute;
+  margin: 260px 0px 0px 330px;
+  background: #42A995;
+  max-width: 300px;
+  border-radius: 23px;
+  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: #FFF;
+  padding: 10px 100px;
+}
+ 
+.top_menu_img img{
+  position: absolute;
+  width: 35%;
+  padding: 50px; 
+}
+
+.title-info {
+  position: absolute;
+  color: rgba(66,169,149,0.2);
+  font-size: 70px;
+  font-weight: bold;
+  padding-left: 150px;
+}
+
+.info-heading {
+  font-size: 30px;
+  padding: 130px 0 0 150px;
+  color: #42A995;
+}
