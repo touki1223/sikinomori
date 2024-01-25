@@ -561,9 +561,15 @@
   color: #42A995;
 }
 
+.footer-contact .fa-envelope:before {
+  color: #42A994;
+  display: inline-block;
+  width: 50px;
+
+}
+
 .fa-envelope:before {
   font-size: 22px;
-  color: #42A995;
 }
 
 .copyright {
