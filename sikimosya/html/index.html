@@ -7,6 +7,16 @@
   <script src="https://kit.fontawesome.com/8e2702973d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.cdnfonts.com/css/01-digitmono" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+       const hum = $('#hamburger, .close')
+       const nav = $('.sp-nav')
+       hum.on('click', function(){
+          nav.toggleClass('toggle');
+       });
+    });
+    </script>
 </head>
 <body>
   <header class="header">
@@ -20,33 +30,53 @@
           <li class="header-nav-item"><a class="header-nav-item-link" href="#">工事までの流れ<span class="sub">FLOW</span></a></li>
           <li class="header-nav-item"><a class="header-nav-item-link" href="#">インフォメーション<span class="sub">INFOMATION</span></a></li>
         <li class="header-nav-tel">
-          <div class="header-nav-tel-icon"><a class="header-nav-tel-link" href="#"><i class="fa-solid fa-phone"></i>0296-26-7101</a></div>
+          <div class="header-nav-tel-icon"><a class="header-nav-tel-link" href="#"><i class="fa-solid fa-phone"></i><p>0296-26-7101</p></a></div>
         </li>
         <li class="header-nav-contact">
           <div class="header-nav-contact-icon"><a class="header-nav-contact-link" href="#"><i class="fa-regular fa-envelope"></i></a></div>
         </li>
+        <li class="close"><span>閉じる</span></li>
       </ul>
       </nav>
+
+      <nav class="sp-nav">
+        <ul>
+          <li><a href="#">TOP</a></li>
+          <li><a href="#">店舗情報・展示場</a></li>
+          <li><a href="#">施工例</a></li>
+          <li class="close"><span>閉じる</span></li>
+      </ul>
+
+      </nav>
+      <div class="hamburger">
+        <span></span>
+      </div>
+      </nav>
+
     </div>
   </header>
   <main>
     <div class="main_visual_block">
       <div class="main_visual_side">
         <div class="main_visual_side_text">
-        <p>株式会社四季の杜は外構、エクステリア、リフォーム、設計･施工の専門店です</p>
-        <div class="main_visual_side_text2">
-          <p>どんな小さな工事でもお気軽にご相談ください。<br>
-            どんな大きな工事でも施工図面をしっかり描き、積算します。</p>
-          </div>
-        <p class="top_catchcopy">
+        株式会社四季の杜は外構、エクステリア、リフォーム、設計･施工の専門店です
+        <p class="main_visual_side_text2">
+          どんな小さな工事でもお気軽にご相談ください。<br>
+            どんな大きな工事でも施工図面をしっかり描き、積算します。
+        </p>
+        </div>
+        <div class="top_catchcopy">
+          <p>
           <span class="topcatch1">物置・ガレージ</span>
           <span class="topcatch2">テラス・ミニハウス</span>
           <span class="topcatch3">多数展示中！</span>
-        </p>
+          </p>
+        </div>
       </div>
-    </div>
       <div class="main_visual">
-        <img src="../images/slide_01.jpg" alt="main_visual"> 
+        <img src="../images/slide_01.jpg" alt="main_visual" class="pc">
+        <img src="../images/slide_01_sp.jpg" alt="main_visual" class="sp">
+
 
       </div>
     </div>
@@ -109,6 +139,9 @@
         </div>
         <div class="top_about_img"  style="width: 50%;">
           <img src="../images/top_about_img.png" alt="top_about_img">
+        </div>
+        <div class="top_about_img_sp">
+          <img src="../images/top_about_sp.jpg" alt="top_about_img_sp">
         </div>
       </section>
 

@@ -129,6 +129,22 @@
   content:"f0e0";  /*アイコンのコード*/
   font-weight:900;  /*アイコンの種類*/
 }
+
+.hamburger{
+  display: none;
+}
+
+.open {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.sp-nav {
+  display: none;
+}
  
 /* main_visual */
 .main_visual_block {
@@ -157,11 +173,15 @@
   margin: 0 auto;
 }
 
-.main_visual img {
+.main_visual .pc {
   width: 100%;
   vertical-align: top;
   height: 100%;
   object-fit: cover;
+}
+
+.main_visual .sp {
+  display: none;
 }
 
 .top_catchcopy span {
@@ -310,6 +330,10 @@
 .top_about_img img {
   max-width: 100%;
   width: 80%;
+}
+
+.top_about_img_sp {
+  display: none;
 }
 
 .menu {
@@ -565,7 +589,7 @@
   color: #42A994;
   display: inline-block;
   width: 50px;
-
+  font-size: 40px;
 }
 
 .fa-envelope:before {
@@ -582,14 +606,324 @@
   color: #FFF;
 }
 
-@media screen and (max-width: 768px) {
-  p{
-      
+@media screen and (max-width: 1000px) {
+  .header{
+      background-color: rgb(255 255 255 / 1.0);
    }
 }
 
-@media screen and (max-width: 480px) {
-  p{
-      
+@media screen and (max-width: 1000px) {
+  .header-inner{
+    display: flex;
+    justify-content: flex-end;
+    height: 110px;
+    width: 113vh;
    }
 }
+
+@media screen and (max-width: 1000px) {
+  .header-title a{
+    margin: 0;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-nav{
+
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-nav-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-nav-tel-link{
+    
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fa-phone:before {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .header-nav-tel{
+    background-color: #51CCB4;
+    margin: 0;
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header-nav-tel p{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #42A995;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger span{
+    position: absolute;
+   top: 50%;
+   left: 15%;
+   display: block;
+   width: 70%;
+   height: 2px;
+   background-color: #fff;
+   transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 25%;
+   left: 15%;
+   width: 70%;
+   height: 2px;
+   background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger::after {
+   content: '';
+   display: block;
+   position: absolute;
+   bottom: 25%;
+   left: 15%;
+   width: 70%;
+   height: 2px;
+   background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hamburger p{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sp-nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .2s ease-in-out;
+  }
+
+  .sp-nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+ .sp-nav li {
+    margin: 0;
+    padding: 0;
+ }
+ .sp-nav li span {
+    font-size: 15px;
+    color: #fff;
+ }
+ .sp-nav li a, .sp-nav li span {
+    display: block;
+    padding: 20px 0;
+ }
+ /*-閉じるアイコンー*/
+ .sp-nav .close {
+    position: relative;
+    padding-left: 20px;
+ }
+ .sp-nav .close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( 45deg );
+ }
+ .sp-nav .close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( -45deg );
+ }
+ .toggle {
+    transform: translateY( 0 );
+    opacity: 1;
+ }
+ /*メインビジュアル*/
+ .main_visual_side_text {
+  display: none;
+ }
+ .main_visual_side {
+  width: 0;
+ }
+ .top_catchcopy {
+  bottom: 65%;
+  padding: 0 20px 0 0;
+ }
+ .main_visual {
+  width: 100%;
+ }
+ .main_visual .pc{
+  display: none;
+ }
+ .main_visual .sp{
+  width: 112vh;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+ }
+ 
+ .sidenav {
+  display: none;
+ }
+
+}
+
+@media screen and (max-width: 768px){
+  .section-title {
+    padding: 90px 10px 20px;
+    width: 110vh;
+    display: block;
+  }
+
+  .top_about_img {
+    display: none;
+   }
+
+  .frame {
+    width: 100vh;
+  }
+
+  .btn {
+    width: 200vh;
+    max-width: 690px;
+    display: block;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 2.2rem;
+  }
+
+  .top_about_img_sp {
+    display: block;
+  }
+
+  .top_about_img_sp img {
+    width: 100%;
+  }
+
+  .menu {
+    display: block;
+    width: 98vh;
+    padding: 60px 50px 40px;
+  }
+
+  .title-menu {
+    left: 20px;
+  }
+
+  .menu-item {
+    width: 100vh;
+    display: block;
+  }
+
+  .menu-heading {
+    left: 30px;
+    position: absolute;
+  }
+
+  .menu-text {
+    text-align: left;
+    font-size: 30px;
+    margin: 0px;
+    padding-top: 90px;
+  }
+
+  .btn-menu {
+    min-width: 70vh;
+    padding: 20px 90px;
+    font-size: 1.8rem;
+    border-radius: 40px;
+  }
+
+  .top_menu_img img {
+    width: 100vh;
+    padding-top: 70px
+  }
+
+  .info {
+    padding: 60px 10px 30px;
+    background: rgb(194,183,139,0.2);
+    width: 110vh;
+  }
+
+  .title-info {
+    top: 0;
+    left: 20px;
+    font-size: 80px;
+    letter-spacing: 0.8rem;
+  }
+
+  .info-heading {
+    position: relative;
+    top: 15px;
+    left: 20px
+  }
+
+  .banner {
+    width: 85vh;
+  }
+
+  .work {
+    width: 100vh;
+  }
+
+  .page-footer {
+    width: 85vh;
+  }
+
+  .copyright {
+    width: 100vh;
+  }
+ }
