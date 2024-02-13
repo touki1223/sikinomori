@@ -1,0 +1,128 @@
+.sikinomori-img {
+  background: url(../images/low_head.jpg);
+  height: 300px;
+  background-position: center;
+}
+
+.sikinomori-main-text {
+  font-size: 35px;
+  text-align: center;
+  padding: 95px 0 0 0;
+  margin: 0;
+  color: #fff;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.sikinomori-main-text p {
+  margin: 30px auto 0;
+}
+
+.sikinomori-main-text span {
+  font-size: 20px;
+}
+
+.sikinomori-page {
+  width: 80%;
+}
+
+.sikinomori-top {
+  padding: 75px 40px;
+}
+
+.sikinomori-inner {
+  margin: 0;
+  position: relative;
+}
+
+.sikinomori-inner-text {
+  margin: 0;
+  color: #42A995;
+  margin-bottom: 30px;
+}
+
+.sikinomori-inner-text p {
+  margin: 0;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  color: rgba(66,169,149,0.2);
+  font-size: 75px;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.sikinomori-flex {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.sikinomori-date {
+  width: 50%;
+}
+
+.sikinomori-date ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.sikinomori-date li {
+  font-size: 16px;
+  width: 200px;
+  padding-bottom: 17px;
+  margin-bottom: 17px;
+  padding-right: 20px;
+  border-bottom: solid 1px #B5B5B5;
+}
+
+.sikinomori-main-img {
+  width: 50%;
+}
+
+.sikinomori-main-img img {
+  width: 100%;
+}
+
+.sikinomori-map iframe  {
+  width: 100%;
+}
+
+.sikinomori-bottom {
+  padding: 60px 40px;
+  background: rgb(194,183,139,0.2);
+}
+
+.sikinomori-service h2 {
+  font-size: 26px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+}
+
+.service-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-flex div {
+  width: 22%;
+  margin-right: 30px;
+}
+
+.service-flex img {
+  width: 100%;
+}
+
+.service-flex p {
+  text-align: center;
+  font-size: 14px;
+}
+
+#service-flex-item {
+  width: 45%;
+}

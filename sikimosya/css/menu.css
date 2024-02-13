@@ -1,0 +1,161 @@
+.menu-main-img {
+  background: url(../images/low_head.jpg);
+  height: 300px;
+  background-position: center;
+}
+
+.menu-main-text {
+  font-size: 35px;
+  text-align: center;
+  padding: 95px 0 0 0;
+  margin: 0;
+  color: #fff;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.menu-main-text p {
+  margin: 30px auto 0;
+}
+
+.menu-main-text span {
+  font-size: 20px;
+}
+
+.menu-page {
+  width: 80%;
+}
+
+.menu-top {
+  padding: 75px 40px;
+}
+
+.menu-inner {
+  position: relative;
+  margin: 0;
+}
+
+.menu-inner-text {
+  margin: 0;
+    color: #42A995;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.menu-inner-text p {
+  margin: 0;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    color: rgba(66,169,149,0.2);
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+
+.menu-body {
+  color: #42A995;
+  font-size: 30px;
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.menu-border {
+  font-size: 25px;
+  border-bottom: solid 2px #42A995;
+  padding-bottom: 20px;
+}
+
+.menu-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-flex-img {
+  width: 45%;
+}
+
+.menu-flex-img img {
+  height: 370px;
+  max-width: 100%;
+}
+
+.menu-flex-text {
+  width: 52%;
+  padding-left: 30px;
+}
+
+.menu-flex-text-item {
+  font-size: 16px;
+}
+
+.blue {
+  color: #0778B2;
+}
+
+.red {
+  color: #BF0F0F;
+}
+
+.menu-message {
+  color: #fff;
+  background: #BF0F0F;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.menu-price {
+  font-size: 14px;
+}
+.menu-price span{
+  font-size: 25px;
+  color: #BF0F0F;
+  font-weight: bold;
+}
+
+.menu-text-item {
+  display: block;
+  background: #D8D8D8;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+
+.menu-price-text {
+  font-size: 15px;
+}
+
+.menu-flex-item-text span {
+  background-color: #D8D8D8;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.menu-flex-item-list {
+  display: flex;
+  padding: 0;
+}
+
+.menu-flex-item-list li {
+  width: 17%;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
+.menu-flex-item-list img {
+  width: 100%;
+  object-fit: cover;
+  height: 150px;
+}
+
+.menu-flex-item-list p {
+  font-size: 13px;
+  line-height: 1.0rem;
+  margin: 8px;
+  color: #333;
+}
