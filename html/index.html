@@ -5,41 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>四季の杜</title>
   <script src="https://kit.fontawesome.com/8e2702973d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.cdnfonts.com/css/01-digitmono" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script>
+    $(function() {
+       const hum = $('#hamburger, .close')
+       const nav = $('.sp-nav')
+       hum.on('click', function(){
+          nav.toggleClass('toggle');
+       });
+    });
+    </script>
 </head>
 <body>
   <header class="header">
     <div class="header-inner">
-      <h1 class="header-title"><a href="#">株式会社 四季の杜</a></h1>
+      <h1 class="header-title"><a href="#">株式会社 <span>四季の杜</span></a></h1>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li class="header-nav-item"><a class="header-nav-item-link" href="#">店舗情報・展示場<span class="sub">SHIKINOMORI</span></a></li>
-          <li class="header-nav-item"><a class="header-nav-item-link" href="#">施行例<span class="sub">WORK</span></a></li>
-          <li class="header-nav-item"><a class="header-nav-item-link" href="#">取り扱い商品<span class="sub">MENU</span></a></li>
+          <li class="header-nav-item"><a class="header-nav-item-link" href="../html/sikinomori.html">店舗情報・展示場<span class="sub">SHIKINOMORI</span></a></li>
+          <li class="header-nav-item"><a class="header-nav-item-link" href="../html/work.html">施行例<span class="sub">WORK</span></a></li>
+          <li class="header-nav-item"><a class="header-nav-item-link" href="../html/menu.html">取り扱い商品<span class="sub">MENU</span></a></li>
           <li class="header-nav-item"><a class="header-nav-item-link" href="#">工事までの流れ<span class="sub">FLOW</span></a></li>
           <li class="header-nav-item"><a class="header-nav-item-link" href="#">インフォメーション<span class="sub">INFOMATION</span></a></li>
-          <li><a class="header-nav-item-link" href="#"><i class="fa-solid fa-phone"></i>0296-26-7101</a></li>
-          <li><i class="fa-regular fa-envelope"></i></li>
-        </ul>
+        <li class="header-nav-tel">
+          <div class="header-nav-tel-icon"><a class="header-nav-tel-link" href="#"><i class="fa-solid fa-phone"></i><p>0296-26-7101</p></a></div>
+        </li>
+        <li class="header-nav-contact">
+          <div class="header-nav-contact-icon"><a class="header-nav-contact-link" href="#"><i class="fa-regular fa-envelope"></i></a></div>
+        </li>
+        <li class="close"><span>閉じる</span></li>
+      </ul>
       </nav>
+
+      <nav class="sp-nav">
+        <ul>
+          <li><a href="#">TOP</a></li>
+          <li><a href="#">店舗情報・展示場</a></li>
+          <li><a href="#">施工例</a></li>
+          <li class="close"><span>閉じる</span></li>
+      </ul>
+
+      </nav>
+      <div class="hamburger">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!--ここからメニュー-->
+        <div class="menu-content">
+          <ul>
+              <li>
+                  <a href="#">TOP</a>
+              </li>
+              <li>
+                  <a href="#">店舗情報・展示場</a>
+              </li>
+              <li>
+                  <a href="#">施工例</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+      </nav>
+
     </div>
   </header>
   <main>
     <div class="main_visual_block">
       <div class="main_visual_side">
-        <p>株式会社四季の杜は外構、エクステリア、リフォーム、設計･施工の専門店です</p>
-        <div class="main_visual_side_text2">
-          <p>どんな小さな工事でもお気軽にご相談ください。<br>
-            どんな大きな工事でも施工図面をしっかり描き、積算します。</p>
-        <p class="top_catchcopy">
+        <div class="main_visual_side_text">
+        株式会社四季の杜は外構、エクステリア、リフォーム、設計･施工の専門店です
+        <p class="main_visual_side_text2">
+          どんな小さな工事でもお気軽にご相談ください。<br>
+            どんな大きな工事でも施工図面をしっかり描き、積算します。
+        </p>
+        </div>
+        <div class="top_catchcopy">
+          <p>
           <span class="topcatch1">物置・ガレージ</span>
           <span class="topcatch2">テラス・ミニハウス</span>
           <span class="topcatch3">多数展示中！</span>
-        </p>
+          </p>
+        </div>
       </div>
-    </div>
       <div class="main_visual">
-        <img src="../images/slide_01.jpg" alt="main_visual"> 
+        <img src="../images/slide_01.jpg" alt="main_visual" class="pc">
+        <img src="../images/slide_01_sp.jpg" alt="main_visual" class="sp">
+
 
       </div>
     </div>
@@ -87,7 +139,7 @@
       </div>
       <div class="page">
         <section class="section-title">
-          <div style="width: 50%;">
+          <div class="section-title-page">
         <p class="title">SHIKINOMORI</p>
         <h2 class="heading">
           株式会社四季の杜は
@@ -100,13 +152,16 @@
           <span>詳しく見る</span>
         </div>
         </div>
-        <div class="top_about_img"  style="width: 50%;">
+        <div class="top_about_img">
           <img src="../images/top_about_img.png" alt="top_about_img">
+        </div>
+        <div class="top_about_img_sp">
+          <img src="../images/top_about_sp.jpg" alt="top_about_img_sp">
         </div>
       </section>
 
       <section class="menu">
-        <div style="width: 50%;">
+        <div class="menu-item">
         <p class="title-menu">Menu</p>
         <h2 class="menu-heading">
           取扱商品
@@ -120,7 +175,7 @@
           <span>詳しく見る</span>
         </div>
       </div>
-        <div class="top_menu_img"  style="width: 50%;">
+        <div class="top_menu_img">
           <img src="../images/top_menu_img.png" alt="top_menu_img">
         </div>
       </section>
@@ -171,12 +226,14 @@
             四季の杜 -施工例-
           </h2>
           <div class="work-flex">
+        <div class="work-flex-text">
           <p class="work-text">
             当社施工事例です。 
             <span>年間実績は200件以上！</span>
             <br>
             茨城県内で数多くの施工実績を積み重ねている当社にお任せください。
           </p>
+        </div>
           <div class="work-img">
             <img src="../images/top_work_img01.png">
           </div>
@@ -191,22 +248,22 @@
             <li>カーポート</li>
             <li>サイクルポート</li>
             <li>樹脂デッキ</li>
-            <li>サンルーム・テラス</li>
+            <li>サンルーム・テラス・バルコニー</li>
             <li>目隠しフェンス</li>
-            <li>お庭作り (62)</li>
-            <li>ガレージ (64)</li>
-            <li>門柱 (塗り塀・レンガ・化粧ブロック 他) (60)</li>
-            <li>アプローチ (72)</li>
-            <li>門廻り (25)</li>
-            <li>塗り塀 (14)</li>
-            <li>塀 (112)</li>
-            <li>駐車場 (80)</li>
-            <li>バイク保管庫 (14)</li>
-            <li>スタンプコンクリート (T様邸・完成までの工程) (5)</li>
-            <li>ゲート (引戸・伸縮門扉 他)  (31)</li>
-            <li>スロープ (手すり 他) (11)</li>
-            <li>事務所・小住宅  (ミニハウス) (10)</li>
-            <li>その他いろいろ！ (29)</li>  
+            <li>お庭作り</li>
+            <li>ガレージ</li>
+            <li>門柱 (塗り塀・レンガ・化粧ブロック 他)</li>
+            <li>アプローチ </li>
+            <li>門廻り </li>
+            <li>塗り塀 </li>
+            <li>塀 </li>
+            <li>駐車場 </li>
+            <li>バイク保管庫 </li>
+            <li>スタンプコンクリート (T様邸・完成までの工程) </li>
+            <li>ゲート (引戸・伸縮門扉 他)  </li>
+            <li>スロープ (手すり 他) </li>
+            <li>事務所・小住宅  (ミニハウス) </li>
+            <li>その他いろいろ！ </li>  
           </ul>
         </div>
       </div>
