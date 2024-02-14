@@ -107,11 +107,11 @@
 .service-flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .service-flex div {
   width: 22%;
-  margin-right: 30px;
 }
 
 .service-flex img {
