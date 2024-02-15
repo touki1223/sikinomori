@@ -24,6 +24,7 @@
 
 .work-page {
   width: 80%;
+  flex-grow: 1;
 }
 
 .work-top {

@@ -24,6 +24,7 @@
 
 .sikinomori-page {
   width: 80%;
+  flex-grow: 1;
 }
 
 .sikinomori-top {

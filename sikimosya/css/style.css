@@ -171,6 +171,7 @@
 .main_visual {
   width: 85%;
   margin: 0 auto;
+  flex-grow: 1;
 }
 
 .main_visual .pc {
