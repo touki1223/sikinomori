@@ -1,0 +1,55 @@
+.contact-main-img {
+  background: url(../images/low_head.jpg);
+  height: 300px;
+  background-position: center;
+}
+
+.contact-main-text {
+  font-size: 35px;
+  text-align: center;
+  padding: 95px 0 0 0;
+  margin: 0;
+  color: #fff;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.contact-main-text p {
+  margin: 30px auto 0;
+}
+
+.contact-main-text span {
+  font-size: 20px;
+}
+
+.contact-page {
+  width: 80%;
+  flex-grow: 1;
+}
+
+.contact {
+  padding: 75px 40px;
+}
+
+.contact-inner {
+  position: relative;
+  margin: 0;
+}
+
+.contact-inner-text {
+  margin: 0;
+    color: #42A995;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.contact-inner-text p {
+  margin: 0;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    color: rgba(66,169,149,0.2);
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
