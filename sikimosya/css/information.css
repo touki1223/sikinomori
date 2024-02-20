@@ -1,0 +1,28 @@
+.information-main-img {
+  background: url(../images/low_head.jpg);
+  height: 300px;
+  background-position: center;
+}
+
+.information-main-text {
+  font-size: 35px;
+  text-align: center;
+  padding: 95px 0 0 0;
+  margin: 0;
+  color: #fff;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.information-main-text p {
+  margin: 30px auto 0;
+}
+
+.information-main-text span {
+  font-size: 20px;
+}
+
+.information-page {
+  width: 80%;
+  flex-grow: 1;
+}

@@ -1,0 +1,158 @@
+.flow-main-img {
+  background: url(../images/low_head.jpg);
+  height: 300px;
+  background-position: center;
+}
+
+.flow-main-text {
+  font-size: 35px;
+  text-align: center;
+  padding: 95px 0 0 0;
+  margin: 0;
+  color: #fff;
+  line-height: 2.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.flow-main-text p {
+  margin: 30px auto 0;
+}
+
+.flow-main-text span {
+  font-size: 20px;
+}
+
+.flow-page {
+  width: 80%;
+  flex-grow: 1;
+}
+
+.flow {
+  padding: 75px 40px;
+}
+
+.flow-inner {
+  position: relative;
+  margin: 0;
+}
+
+.flow-inner-text {
+  margin: 0;
+    color: #42A995;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.flow-inner-text p {
+  margin: 0;
+    position: absolute;
+    top: -70px;
+    left: 0;
+    color: rgba(66,169,149,0.2);
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+
+.flow-read {
+  margin: 0 0 20px 0;
+  line-height: 1.75em;
+}
+
+.flow-list {
+  margin: 80px 0 50px;
+}
+
+.flow-flex {
+  display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1150px;
+
+}
+
+.flow-flex-left-img {
+  width: 20%;
+}
+
+.flow-flex-img {
+  background: #42A995;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  width: 74px;
+  height: 74px;
+}
+
+.flow-flex-img img {
+  max-width: 71px;
+}
+
+.flow-text-flex {
+  width: 80%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    border-bottom: solid 1px #000;
+    padding-bottom: 20px;
+}
+
+.flow-text {
+  padding: 0 25px 20px;
+}
+
+.flow-line {
+  font-size: 24px;
+  color: #14746E;
+  position: relative;
+  padding: 10px 50px 0px 10px;
+  display: inline-block;
+  margin-bottom: 30px;
+  letter-spacing: 0.5rem;
+}
+
+.flow-text p {
+  font-size: 20px;
+}
+
+.flow-tel-flex {
+  display: flex;
+}
+
+.flow-nav-tel-link {
+  color: #FFF;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 30px;
+    background-color: #42A995;
+    padding: 3px 10px;
+    margin-right: 16px;
+}
+
+.flow-tel-text {
+  margin: 0;
+  width: 60%;
+}
+
+.flow-flex-right-img {
+  max-width: 300px;
+    margin-right: 80px;
+    margin-top: 40px;
+}
+
+.flow-flex-right-img img {
+  width: 100%;
+    max-width: 300px;
+    height: 208px;
+}
+
+.flow-end {
+  text-align: center;
+    margin: 40px 0;
+}

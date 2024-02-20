@@ -74,6 +74,7 @@
 .menu-flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .menu-flex-img {
@@ -131,6 +132,10 @@
 
 .menu-price-text {
   font-size: 15px;
+}
+
+.menu-item-width {
+  width: 100%;
 }
 
 .menu-flex-item-text span {
