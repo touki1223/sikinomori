@@ -9,7 +9,17 @@
   <link rel="stylesheet" href="../css/sikinomori.css">
   <link href="https://fonts.cdnfonts.com/css/01-digitmono" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
+       $(function() {
+	setTimeout(function(){
+		$('.logo_fadein p').fadeIn(1000);
+	},500);
+	setTimeout(function(){
+		$('.logo_fadein').fadeOut(1000);
+	},2500);
+});
+
     $(function() {
        const hum = $('#hamburger, .close')
        const nav = $('.sp-nav')
@@ -31,10 +41,8 @@
 </head>
 
 <body>
-  <div class="loader-bg">
-    <div class="loader">
-    <img src="/images/load.png" alt class="fadeup">
-    </div>
+  <div class="logo_fadein">
+    <p>株式会社四季の杜</p>
   </div>
   <header class="header">
     <div class="header-inner">

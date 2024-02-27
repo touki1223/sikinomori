@@ -1221,33 +1221,24 @@
   }
  }
 
- .loader-bg {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ .logo_fadein{
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
 }
+.logo_fadein p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	text-align: center;
+  font-size: 45px;
+  color: #42A994;
 
-.loader {
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.loader img {
-  width: 350px;
-}
-
-.fadeup {
-  animation-name: fadeUpAnime;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
 }
