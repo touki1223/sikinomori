@@ -69,9 +69,18 @@
   margin: 0;
 }
 
-.sikinomori-date li {
+.sikinomori-date-top {
   font-size: 16px;
-  width: 200px;
+  width: 30%;
+  padding-bottom: 17px;
+  margin-bottom: 17px;
+  padding-right: 20px;
+  border-bottom: solid 1px #B5B5B5;
+}
+
+.sikinomori-date-bottom {
+  font-size: 16px;
+  width: 45%;
   padding-bottom: 17px;
   margin-bottom: 17px;
   padding-right: 20px;
@@ -126,4 +135,81 @@
 
 #service-flex-item {
   width: 45%;
+}
+
+@media screen and (max-width: 768px)  {
+  .sikinomori-img {
+    height: 100px;
+    margin-top: 60px;
+  }
+
+  .sikinomori-main-text {
+    padding: 0;
+  }
+  .sikinomori-main-text p {
+    font-size: 24px;
+    margin-top: 0;
+    line-height: 2rem;
+    padding-top: 15px;
+  }
+
+  .sikinomori-inner-text p {
+    font-size: 38px;
+    top: -35px;
+  }
+}
+@media screen and (max-width: 480px)  {
+  .sikinomori-top {
+    padding: 60px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sikinomori-flex {
+    flex-wrap: wrap;
+  }
+
+  .sikinomori-date {
+    width: 100%;
+    order: 2;
+  }
+
+  .sikinomori-main-img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sikinomori-date li {
+    
+  }
+
+  .sikinomori-date-top {
+    width: 100%;
+    border-bottom: none;
+    margin-bottom: -15px;
+    text-align: center;
+  }
+
+  .sikinomori-date-bottom {
+    border-bottom: solid 1px #B5B5B5;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sikinomori-bottom {
+    padding: 60px 10px 30px;
+  }
+
+  .sikinomori-service h2 {
+    font-size: 20px;
+  }
+
+  .service-flex div {
+    width: 48%;
+  }
+
+  #service-flex-item {
+    width: 100%;
+  }
 }

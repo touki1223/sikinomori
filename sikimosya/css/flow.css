@@ -78,16 +78,42 @@
 .flow-flex-img {
   background: #42A995;
   margin: 0 auto;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
   border-radius: 50%;
   position: relative;
-  width: 74px;
-  height: 74px;
+  width: 40px;
+  height: 40px;
 }
 
 .flow-flex-img img {
-  max-width: 71px;
+  max-width: 40px;
+}
+
+.boldbottom{
+  position: relative;
+}
+.boldbottom::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 95px;
+  width: 0px;
+  height: 100px;
+  border-left: dotted 5px #42A995;
+}
+.boldbottom::after{
+  content: "";
+    display: block;
+    position: absolute;
+    top: 110px;
+    left: 85px;
+    width: 0;
+    height: 0;
+    border: 20px solid;
+    border-color: #42A995 transparent transparent transparent;
+    border-width: 15px 12.5px 0 12.5px;
 }
 
 .flow-text-flex {
@@ -111,6 +137,20 @@
   display: inline-block;
   margin-bottom: 30px;
   letter-spacing: 0.5rem;
+}
+
+.flow-line::after {
+  content: "";
+    background-image: url(../images/h_line.png);
+    background-repeat: repeat-x;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    top: 35px;
 }
 
 .flow-text p {
@@ -155,4 +195,80 @@
 .flow-end {
   text-align: center;
     margin: 40px 0;
+}
+
+.flow-end img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px)  {
+  .flow-main-img {
+    height: 100px;
+    margin-top: 60px;
+  }
+
+  .flow-main-text {
+    padding: 0;
+  }
+  .flow-main-text p {
+    font-size: 24px;
+    margin-top: 0;
+    line-height: 2rem;
+    padding-top: 15px;
+  }
+
+  .flow-inner-text p {
+    font-size: 38px;
+    top: -35px;
+  }
+}
+@media screen and (max-width: 480px)  {
+  .flow-top {
+    padding: 60px 10px 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .flow-flex-left-img {
+    width: 100%;
+  }
+
+  .boldbottom::before {
+    display: none;
+  }
+
+  .boldbottom::after {
+    top: 10px;
+    left: 185px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .flow-list {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flow-text-flex {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .flow-text {
+    padding: 0;
+  }
+
+  .flow-text p {
+    font-size: 16px;
+  }
+
+  .flow-tel-flex {
+    flex-wrap: wrap;
+  }
+
+  .flow-nav-tel-link {
+    width: 100%;
+    margin: 0 25px 20px;
+  }
 }

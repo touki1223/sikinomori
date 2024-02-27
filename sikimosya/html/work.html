@@ -17,10 +17,25 @@
           nav.toggleClass('toggle');
        });
     });
+
+    $(function(){
+    $(window).on('load',function(){
+        $('.loader').delay(500).fadeOut(500);
+        $('.loader-bg').delay(800).fadeOut(700);
+    });
+    setTimeout(function(){
+        $('.loader-bg').fadeOut(500);
+    },5000);
+});
     </script>
 </head>
 
 <body>
+  <div class="loader-bg">
+    <div class="loader">
+    <img src="/images/load.png" alt class="fadeup">
+    </div>
+  </div>
   <header class="header">
     <div class="header-inner">
       <h1 class="header-title"><a href="index.html">株式会社 <span>四季の杜</span></a></h1>
@@ -32,7 +47,7 @@
           <li class="header-nav-item"><a class="header-nav-item-link" href="flow.html">工事までの流れ<span class="sub">FLOW</span></a></li>
           <li class="header-nav-item"><a class="header-nav-item-link" href="information.html">インフォメーション<span class="sub">INFOMATION</span></a></li>
         <li class="header-nav-tel">
-          <div class="header-nav-tel-icon"><a class="header-nav-tel-link" href="#"><i class="fa-solid fa-phone"></i><p>0296-26-7101</p></a></div>
+          <div class="header-nav-tel-icon"><a class="header-nav-tel-link" href="tel:000-000-000"><i class="fa-solid fa-phone"></i><p>0296-26-7101</p></a></div>
         </li>
         <li class="header-nav-contact">
           <div class="header-nav-contact-icon"><a class="header-nav-contact-link" href="contact.html"><i class="fa-regular fa-envelope"></i></a></div>
@@ -118,7 +133,7 @@
         <li>その他いろいろ！ (29)</li>  
       </ul>
       <ul class="side_contact">
-        <li><i class="fa-solid fa-phone"></i>0296-26-7101</li>
+        <li><a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>0296-26-7101</li></a>
         <li><a href="contact.html"><i class="fa-regular fa-envelope"></i>メールでのお問い合わせ</li></a>
       </ul>
     <div class="side_contact2">
@@ -174,10 +189,10 @@
         <div class="page-footer">
           <div class="footer-text">
             <h2>お電話でのお問い合わせ</h2>
-            <p><i class="fa-solid fa-phone"></i>0296-26-7101</p>
+            <p><a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>0296-26-7101</p></a>
           </div>
           <div class="footer-contact">
-            <p><i class="fa-regular fa-envelope"></i>メールでのお問い合わせ</p>
+            <p><a href="contact.html"><i class="fa-regular fa-envelope"></i>メールでのお問い合わせ</p></a>
           </div>
         </div>
         <div class="copyright">

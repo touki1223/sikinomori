@@ -605,6 +605,10 @@
   color: #42A995;
 }
 
+.footer-contact a {
+  color: #42A994;
+}
+
 .footer-contact .fa-envelope:before {
   color: #42A994;
   display: inline-block;
@@ -1216,3 +1220,34 @@
     width: 100%;
   }
  }
+
+ .loader-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader img {
+  width: 350px;
+}
+
+.fadeup {
+  animation-name: fadeUpAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}

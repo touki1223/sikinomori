@@ -18,12 +18,27 @@
           nav.toggleClass('toggle');
        });
     });
+
+    $(function(){
+    $(window).on('load',function(){
+        $('.loader').delay(500).fadeOut(500);
+        $('.loader-bg').delay(800).fadeOut(700);
+    });
+    setTimeout(function(){
+        $('.loader-bg').fadeOut(500);
+    },5000);
+});
     </script>
 </head>
 <script src="../js/lightbox.min.js"></script>
 <script src="../js/lightbox-plus-jquery.min.js"></script>
 
 <body>
+  <div class="loader-bg">
+    <div class="loader">
+    <img src="/images/load.png" alt class="fadeup">
+    </div>
+  </div>
    <header class="header">
       <div class="header-inner">
         <h1 class="header-title"><a href="index.html">株式会社 <span>四季の杜</span></a></h1>
@@ -35,7 +50,7 @@
             <li class="header-nav-item"><a class="header-nav-item-link" href="flow.html">工事までの流れ<span class="sub">FLOW</span></a></li>
             <li class="header-nav-item"><a class="header-nav-item-link" href="information.html">インフォメーション<span class="sub">INFOMATION</span></a></li>
           <li class="header-nav-tel">
-            <div class="header-nav-tel-icon"><a class="header-nav-tel-link" href="#"><i class="fa-solid fa-phone"></i><p>0296-26-7101</p></a></div>
+            <div class="header-nav-tel-icon"><a class="header-nav-tel-link" href="tel:000-000-000"><i class="fa-solid fa-phone"></i><p>0296-26-7101</p></a></div>
           </li>
           <li class="header-nav-contact">
             <div class="header-nav-contact-icon"><a class="header-nav-contact-link" href="contact.html"><i class="fa-regular fa-envelope"></i></a></div>
@@ -121,7 +136,7 @@
           <li>その他いろいろ！ (29)</li>  
         </ul>
         <ul class="side_contact">
-          <li><i class="fa-solid fa-phone"></i>0296-26-7101</li>
+          <li><a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>0296-26-7101</li></a>
           <li><a href="contact.html"><i class="fa-regular fa-envelope"></i>メールでのお問い合わせ</li></a>
         </ul>
       <div class="side_contact2">
@@ -138,9 +153,63 @@
       </div>
       
       <div class="contact-page">
-        <section class="contact">
+        <section class="contact-top">
           <div class="contact-inner">
             <h2 class="contact-inner-text">
               <p>contact</p>
               お問い合わせ
             </h2>
+            <div>
+              <form action="contact.html" method="post"></form>
+              <div class="contact-form">
+                お名前（姓名）
+                <span class="text-red">必須</span>
+                <br>
+                <input type="text" name="お名前" size="60" placeholder="例：山田太郎" required>
+                <br>
+                フリガナ（姓名）
+                <span class="text-red">必須</span>
+                <br>
+                <input type="text" name="フリガナ" size="60" placeholder="例：ヤマダタロウ">
+                <br>
+                メールアドレス
+                <span class="text-red">必須</span>
+                <br>
+                <input type="text" name="メールアドレス" size="60" placeholder="例：yamada@abc.co.jp">
+                <br>
+                電話番号
+                <span class="text-red">必須</span>
+                <br>
+                <input type="text" name="電話番号" size="60" placeholder="例：090-1234-5678">
+                <br>
+                住所
+                <span class="text-red">必須</span>
+                <br>
+                <input type="text" name="住所" size="60" placeholder="例：茨城県筑西市〇〇町1-2-3">
+                <br>
+                お問い合わせ内容
+                <span class="text-red">必須</span>
+                <br>
+                <textarea name="お問い合わせ内容" rows="10" cols="60" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+                <input type="submit" name="確認" value="確認画面へ">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="page-footer">
+            <div class="footer-text">
+              <h2>お電話でのお問い合わせ</h2>
+              <p><a href="tel:000-000-000"><i class="fa-solid fa-phone"></i>0296-26-7101</p></a>
+            </div>
+            <div class="footer-contact">
+              <p><a href="contact.html"><i class="fa-regular fa-envelope"></i>メールでのお問い合わせ</p></a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>株式会社 四季の杜. All Rights Reserved.</p>
+          </div>
+        </footer>
+      </div>
+  </body>
