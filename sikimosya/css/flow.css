@@ -27,7 +27,7 @@
   flex-grow: 1;
 }
 
-.flow {
+.flow-top {
   padding: 75px 40px;
 }
 
@@ -98,7 +98,8 @@
   display: block;
   position: absolute;
   top: 8px;
-  left: 95px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 0px;
   height: 100px;
   border-left: dotted 5px #42A995;
@@ -108,7 +109,8 @@
     display: block;
     position: absolute;
     top: 110px;
-    left: 85px;
+    left: 50%;
+  transform: translateX(-50%);
     width: 0;
     height: 0;
     border: 20px solid;
@@ -239,7 +241,7 @@
 
   .boldbottom::after {
     top: 10px;
-    left: 185px;
+    left: 50%;
   }
 }
 
@@ -253,6 +255,7 @@
   .flow-text-flex {
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
   }
 
   .flow-text {

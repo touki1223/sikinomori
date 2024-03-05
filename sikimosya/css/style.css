@@ -566,14 +566,15 @@
   display: flex;
   text-align: center;
   background: #42A995;
-  padding: 50px 100px;
+  padding: 50px 0px;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-text {
   color: #FFf;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.6vh;
   width: 50%;
 }
 
@@ -582,15 +583,16 @@
 }
 
 .footer-text p {
-  font-size: 45px;
+  font-size: 3vw;
   margin: 0;
 }
 
 .footer-contact {
   color: #42A995;
-  font-size: 30px;
+  font-size: 28px;
   width: 50%;
   background-color: #42A995;
+  padding-right: 10px;
 }
 
 .footer-contact p {
@@ -598,7 +600,7 @@
   background: #fff;
   margin: 0;
   padding: 16px 0;
-  width: 430px;
+  max-width: 430px;
 }
 
 .footer-contact p i{

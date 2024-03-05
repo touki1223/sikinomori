@@ -27,7 +27,7 @@
   flex-grow: 1;
 }
 
-.contact {
+.contact-top {
   padding: 75px 40px;
 }
 
@@ -73,6 +73,8 @@
   padding: 3px 20px;
   font-size: 18px;
   width: 100%;
+  border: 2px #CBCBCB solid;
+  font-family: yu-gothic-pr6n, sans-serif;
 }
 
 .contact-form textarea {
@@ -91,6 +93,7 @@
     padding: 30px;
     color: #fff;
     display: block;
+    border: 0;
 }
 
 @media screen and (max-width: 768px)  {
